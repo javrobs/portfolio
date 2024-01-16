@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+/*
+body{
+    background-color: #150017;
+    background: linear-gradient(145deg, #2b172b 20%,  black 110%);
+    min-height: 100dvh;
+    color:#d3cae3;
+    font-family: Manrope,sans-serif;
+}
+
+#name{
+    font-size:x-large;
+    color: #84ff00;
+    text-shadow: 0 0 3px #84ff00;
+    transition-duration: .1s;
+    text-decoration: none;
+}
+
+#name:hover{
+    font-size:xx-large;
+    transition-duration: .3s;
+}
+
+header{
+    background-color: #150017;
+    background:linear-gradient(240deg, #84ff00 -40%, #FF0054 140%);
+    position:sticky;
+    top:0;
+    z-index:1;
+    font-family:Raleway,sans-serif;
+}
+
+#divider{
+    padding:3px 0px;
+    background-color: #FF0054;
+    box-shadow: 0 0 25px 1px #FF0054;
+}
+
+h1,h2{
+    color:#FF0054;
+    text-shadow: 0 0 3px #FF0054;
+    font-family:Raleway,sans-serif;
+}
+
+#menu>a{
+    color:#FF0054;
+    margin:0 1.5rem 0 0;
+    transition-duration: .1s;
+    text-shadow: 0 0 3px #FF0054;
+}
+
+#menu>a:hover,#menu>a.selected{
+    text-shadow: 0 0 15px white; 
+    color:#ffa2c1;
+    font-size:larger;
+    transition-duration: .3s;
+} 
+*/
