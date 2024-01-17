@@ -70,6 +70,7 @@ h1,h2{
 
 header,footer{
     /* background:linear-gradient(90deg, #023A -10%, #000A ); */
+    -webkit-backdrop-filter: brightness(70%) blur(2.5rem);
     backdrop-filter: brightness(70%) blur(2.5rem);
     z-index:3;
 }
