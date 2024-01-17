@@ -11,8 +11,6 @@
     font-weight: 100 1000;
 }
 
-
-
 body{
     min-height: 100dvh;
     font-family: Manrope,sans-serif;
@@ -39,7 +37,7 @@ img{
 header{
     position:sticky;
     top:0;
-    z-index:1;
+    /* z-index:1; */
     font-family:Raleway,sans-serif;
 }
 
