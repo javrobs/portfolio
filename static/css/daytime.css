@@ -8,7 +8,7 @@
 
 body{
     color:var(--text);
-    background:linear-gradient(0deg,#0005,#0005),url("../images/bg-2.jpg");
+    background:linear-gradient(#0006,#0006),url("../images/bg-2.jpg");
     background-size: cover;
     text-shadow: 2px 2px 5px #0004;
 }
@@ -70,15 +70,16 @@ h1,h2{
 
 header,footer{
     /* background:linear-gradient(90deg, #023A -10%, #000A ); */
-    backdrop-filter: blur(15px);
+    backdrop-filter: brightness(70%) blur(2.5rem);
     z-index:3;
 }
 
 /* main{
     filter:blur(10px)
 } */
-
+/* 
 .text-container{
     background-color: #0004;
     border-radius: 1rem;
-}
+
+} */
