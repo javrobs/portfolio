@@ -1,0 +1,72 @@
+/* ==[ Colors ]== */
+:root{
+    --purple:#2b172b;
+    --darkerPurple:#150017;
+    --neonGreen:#84ff00;
+    --neonGreenOn:#b1ff5e;
+    --neonPink:#FF0054;
+    --neonPinkOn:#ffa2c1;   
+    --neonshine:.5rem;
+}
+
+
+body{
+    background-color: #150017;
+    /* background: linear-gradient(90deg, var(--purple) 20%,  black 150%); */
+    background-image:url("../images/bg.jpg");
+    background-size: cover;
+    backdrop-filter: brightness(25%);
+    color:#d3cae3;
+}
+
+#name{
+    color: var(--neonGreen);
+    text-shadow: 0 0 var(--neonshine) var(--neonGreen);
+}
+
+
+#name:hover{
+    text-shadow: 0 0 var(--neonshine) white;
+    color:var(--neonGreenOn);
+}
+
+img{
+    border-radius: 50%;
+    box-shadow:0 0 var(--neonshine) var(--neonGreenOn);
+}
+
+header{
+    background-color: #150017;
+    background: linear-gradient(90deg, var(--purple) 20%,  black 150%);
+}
+
+#divider{
+    box-shadow: 0 0 var(--neonshine) var(--neonPink);
+    background-color: var(--neonPink);
+}
+
+h1,h2{
+    color:var(--neonPink);
+    text-shadow: 0 0 var(--neonshine) var(--neonPink);
+}
+
+.actionLink{
+    color:var(--neonPink);
+    text-shadow: 0 0 var(--neonshine) var(--neonPink);
+}
+
+.actionLink:hover{
+    text-shadow: 0 0 var(--neonshine) white;
+    color:var(--neonPinkOn);
+}
+
+.custom-button{
+    background-color: var(--neonPink);
+    color:white;
+    box-shadow: 0 0 var(--neonshine) var(--neonPink);
+}
+
+.custom-button:hover{
+    background-color: var(--neonPinkOn);
+    box-shadow: 0 0 var(--neonshine) white;
+}
