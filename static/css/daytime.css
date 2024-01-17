@@ -1,7 +1,7 @@
 :root{
     --bgcolor:#00213b;
-    --accent:#C73205;
-    --accentTransparent:#fe342a33;
+    --accent:#c76305;
+    --accentTransparent:#c7630533;
     --text:#d3cae3;
 }
 
@@ -46,6 +46,7 @@ img{
 
 h1,h2{
     text-shadow: 4px 4px 8px #0007;
+    color:var(--accent);
 }
 
 .actionLink:hover{
@@ -70,8 +71,8 @@ h1,h2{
 
 header,footer{
     /* background:linear-gradient(90deg, #023A -10%, #000A ); */
-    -webkit-backdrop-filter: brightness(70%) blur(2.5rem);
-    backdrop-filter: brightness(70%) blur(2.5rem);
+    -webkit-backdrop-filter: brightness(70%) blur(2rem);
+    backdrop-filter: brightness(70%) blur(2rem);
     z-index:3;
 }
 
