@@ -50,7 +50,6 @@ h1,h2{
 }
 
 .actionLink{
-    margin:0 1rem 0 0;
     padding:.5rem;
     transition-duration: .1s;
     cursor:pointer;
@@ -78,3 +77,4 @@ h1,h2{
 .page.active-page{
     display:flex;
 }
+

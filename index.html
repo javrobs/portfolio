@@ -16,18 +16,24 @@
     <header class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-between p-3 align-items-center">
-                <span class="m-0" id="name" onclick="activatePage('about-me')">Javier Robles Samar</span>
-                <div id="mini-menu" class="d-sm-none">
-                    <button class="custom-button"><i class="bi bi-list"></i></button>
+                <span class="m-0" id="name" onclick="activatePageMini('about-me')">Javier Robles Samar</span>
+                <div id="mini-menu" class="d-md-none">
+                    <button class="custom-button" onclick="expandMiniMenu();" id="minimenu-button"><i class="bi bi-chevron-compact-down"></i></button>
                 </div>
-                <div id="menu" class="d-none d-sm-flex align-items-center">
-                    <span class="actionLink" onclick="activatePage('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</span>
-                    <span class="actionLink" onclick="activatePage('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</span>
-                    <span class="actionLink" onclick="activatePage('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</span>
+                <div id="menu" class="d-none d-md-flex align-items-center">
+                    <span class="actionLink me-2" onclick="activatePage('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</span>
+                    <span class="actionLink me-2" onclick="activatePage('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</span>
+                    <span class="actionLink me-2" onclick="activatePage('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</span>
                 </div>
             </div>
         </div>
         <div class="row" id="divider"></div>
+        <div id="minimenu" class="collapsible d-md-none flex-column align-items-center">
+            <div class="actionLink" onclick="activatePageMini('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</div>
+            <div class="actionLink" onclick="activatePageMini('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</div>
+            <div class="actionLink" onclick="activatePageMini('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</div>
+        </div>
+        <div class="row d-md-none collapsible" id="divider"></div>    
     </header>
     <main class="container-fluid flex-grow-1 d-flex flex-column justify-content-center" id="content">
         <div class="row page active-page p-3" id="about-me">
@@ -42,8 +48,8 @@
                     <p>On this page you can find some projects that I've worked on, as well as my contact information. Feel free to look around and reach out to me with questions or comments.</p>
                 </div>
                 <div class="text-center my-2">
-                    <button class="custom-button m-2 px-3 py-2"><i class="bi bi-terminal me-1"></i>See projects</button>
-                    <button class="custom-button m-2 px-3 py-2"><i class="bi bi-person-vcard me-1"></i>Contact me</button>
+                    <button class="custom-button m-2 px-3 py-2" onclick="activatePage('projects')"><i class="bi bi-terminal me-1"></i>See projects</button>
+                    <button class="custom-button m-2 px-3 py-2" onclick="activatePage('contact')"><i class="bi bi-person-vcard me-1"></i>Contact me</button>
                 </div>
             </div>
         </div>
@@ -98,15 +104,15 @@
                 <p class="m-0">Thanks for stopping by!</p>
                 <p class="m-0">Let's keep in touch</p>
                 <div class="m-2">
-                    <a class="custom-button m-1 text-center py-1 px-2"><i class="bi bi-linkedin"></i></a>
-                    <a class="custom-button m-1 text-center py-1 px-2"><i class="bi bi-envelope"></i></a>
-                    <a class="custom-button m-1 text-center py-1 px-2"><i class="bi bi-github"></i></a>
+                    <a class="custom-button m-1 text-center py-1 px-2" href="https://www.linkedin.com/in/javier-robles-samar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a class="custom-button m-1 text-center py-1 px-2" href="mailto:javieroblesamar@gmail.com"><i class="bi bi-envelope"></i></a>
+                    <a class="custom-button m-1 text-center py-1 px-2" href="https://github.com/javrobs" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
             </div>
             <div class="col-12 col-md-6 my-2">
                 <span>
                     <i class="bi bi-image me-1"></i>Background by<br>
-                    <a target="_blank" href="https://unsplash.com/es/@aryncreativestudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Andary</a> on <a href="https://unsplash.com/es/fotos/fotografia-de-cielo-azul-afHVU5hBqnw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                    <a target="_blank" href="https://unsplash.com/es/@aryncreativestudio?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aaron Andary</a> on <a href="https://unsplash.com/es/fotos/fotografia-de-cielo-azul-afHVU5hBqnw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">Unsplash</a>
                 </span>
             </div>
         </div>
