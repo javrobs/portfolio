@@ -5,6 +5,7 @@
     --accent:#fb8525;
     --accentTransparent:#fb852533;
     --text:#e0d4f6;
+    --textTransparent:#e0d4f633;
 }
 
 @font-face {
@@ -23,7 +24,7 @@ body{
     min-height: 100dvh;
     font-family: Manrope,sans-serif;
     color:var(--text);
-    background: linear-gradient(44deg, #0238 38%, #0264 100%), url(../images/background-3.jpg);
+    background: linear-gradient(44deg, #0247 38%, #0247 100%), url(../images/background-3.jpg);
     /* background:#333; */
     background-size: cover;
     background-position: 50%;
@@ -167,12 +168,12 @@ header{
 
 .image-description>p{
     position:absolute;
-    background-color: var(--darktextlow);
+    backdrop-filter:blur(3px) brightness(60%);
     height:100%;
     opacity: 0;
     overflow-y: 0;
     overflow: hidden;
-    transition: .4s ease-out;
+    transition: .3s ease-out;
     width: 100%;
     bottom:0;
     margin:0;
@@ -180,9 +181,6 @@ header{
     border-radius: 1rem;
 }
 
-.image-description:hover>p{
-    opacity: 1;
-}
 
 .tag-container{
     display: flex;
@@ -203,13 +201,19 @@ header{
 
 .projectLink{
     box-shadow: 0 0 0 0 var(--accentTransparent);
-    transition: .4s ease-out;
     padding:.5rem;
 }
 
-a.projectLink:hover{
-    box-shadow: 0 0 0 0 var(--accentTransparent);
+.projectLink:hover{
+    box-shadow: 0 0 0 5px var(--textTransparent);
+    transition:.3s box-shadow;
 }
+
+
+.projectLink:hover>.image-description>p{
+    opacity: 1;
+}
+
 
 .project-title>img{
     height:2rem;

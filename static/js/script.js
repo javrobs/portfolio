@@ -43,7 +43,7 @@ function roxiesWebsite(){
 }
 
 
-let divsToDrop=[['greeting',1],['p-1',3],['p-2',3],['p-3',3]];
+let divsToDrop=[['greeting',1.5],['p-1',3],['p-2',3],['p-3',3]];
 startLetterDropper(...divsToDrop[0])
 
 function startLetterDropper(itemID,speed){
