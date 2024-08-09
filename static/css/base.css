@@ -8,6 +8,8 @@
     --textTransparent:#e0d4f633;
 }
 
+
+
 @font-face {
     font-family: Raleway;
     src: url(../fonts/Raleway-VariableFont_wght.ttf);
@@ -24,21 +26,27 @@ body{
     min-height: 100dvh;
     font-family: Manrope,sans-serif;
     color:var(--text);
-    background: linear-gradient(44deg, #0129 38%, #0129 100%), url(../images/background-3.jpg);
-    background-size: auto 120lvh;
-    background-position: 50%;
-    background-attachment: fixed;
+    background-color: #023;
     text-shadow: 1px 1px var(--darktextlow);
 }
 
+.background{
+    position:fixed;
+    height:100%;
+    z-index:-1;
+    background: linear-gradient(44deg, #0129 38%, #0129 100%), url(../images/background-3.jpg);
+    background-size: auto 100lvh;
+    background-position: 50%;
+    background-attachment: fixed;
+    width:100%;
+}
+
 @media (min-aspect-ratio:4/3){
-    body{
+    .background{
         background-size: cover;
     }
-    h1#greeting{
-        color:red
-    }
 }
+
 
 button{
     background-color: unset;
@@ -97,7 +105,7 @@ img#me-and-roxie{
 .actionLink:hover{
     font-size:larger;
     transition-duration: .3s;    
-    background-color: #FFF3;
+    background-color: var(--textTransparent);
 }
 
 
@@ -107,6 +115,7 @@ h1,h2,#name{
 
 h1,#name{
     color:var(--accent);
+    color:red;
 }
 
 
@@ -129,8 +138,13 @@ h1,#name{
 }
 
 header,footer{
+    /* background-color: #181828bb; */
     backdrop-filter: brightness(60%) blur(3px);
     z-index:3;
+}
+
+footer{
+    /* background-color: #181828; */
 }
 
 .collapsible{
@@ -215,9 +229,9 @@ header{
 }
 
 .projectLink:hover{
-    border-color: var(--textTransparent);
     box-shadow: none;
-    transition:.3s border-color;
+    transition:.3s background-color;
+    background-color: var(--textTransparent);
 }  
 
 
