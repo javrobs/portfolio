@@ -77,3 +77,13 @@ function dropALetter(text,item,speed){
         if(divsToDrop.length)setTimeout(startLetterDropper.bind(this,...divsToDrop[0]),1000);
     }
 }
+
+window.addEventListener('load',adjustBackground);
+window.addEventListener('resize',adjustBackground);
+window.addEventListener('changeOrientation',adjustBackground);
+
+
+function adjustBackground(){
+    console.log('doing it?')
+    document.querySelector('.background').style.height = `${window.innerHeight}px`;
+}
