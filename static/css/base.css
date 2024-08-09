@@ -24,12 +24,17 @@ body{
     min-height: 100dvh;
     font-family: Manrope,sans-serif;
     color:var(--text);
-    background: linear-gradient(44deg, #0247 38%, #0247 100%), url(../images/background-3.jpg);
-    /* background:#333; */
-    background-size: cover;
+    background: linear-gradient(44deg, #0129 38%, #0129 100%), url(../images/background-3.jpg);
+    background-size: auto 100lvh;
     background-position: 50%;
     background-attachment: fixed;
     text-shadow: 1px 1px var(--darktextlow);
+}
+
+@media (min-aspect-ratio:4/3){
+    body{
+        background-size: cover;
+    }
 }
 
 button{
@@ -61,9 +66,9 @@ a:hover,a:active{
 }
 
 #name:hover{
-    font-weight: 300;
+    font-weight: 400;
     background-color: var(--accentTransparent);
-    font-size:2.5rem;
+    font-size:2rem;
     transition-duration: .3s;
 }
 
@@ -76,6 +81,7 @@ img{
 
 img#me-and-roxie{
     max-height: 400px;
+    box-shadow: .15rem .15rem .25rem #000A;
 }
 
 .actionLink{
@@ -101,9 +107,9 @@ h1,#name{
 }
 
 
-#divider{
+.divider{
     box-shadow: inset 0 0 .25rem #0006;
-    padding:3px 0px;
+    padding:3px;
 }
 
 
@@ -168,7 +174,8 @@ header{
 
 .image-description>p{
     position:absolute;
-    backdrop-filter:blur(3px) brightness(60%);
+    /* backdrop-filter:blur(3px) brightness(60%);*/
+    background-color:#023;
     height:100%;
     opacity: 0;
     overflow-y: 0;
@@ -200,18 +207,20 @@ header{
 }
 
 .projectLink{
-    box-shadow: 0 0 0 0 var(--accentTransparent);
+    border: 5px solid transparent;
     padding:.5rem;
 }
 
 .projectLink:hover{
-    box-shadow: 0 0 0 5px var(--textTransparent);
-    transition:.3s box-shadow;
-}
+    border-color: var(--textTransparent);
+    box-shadow: none;
+    transition:.3s border-color;
+}  
 
 
 .projectLink:hover>.image-description>p{
     opacity: 1;
+    transition: .3s opacity;
 }
 
 

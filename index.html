@@ -24,27 +24,26 @@
                     <button class="actionLink" onclick="activatePage('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</button>
                 </div>
             </div>
+            <div class="col-12 divider"></div>
         </div>
-        <div class="row" id="divider"></div>
-        <div id="minimenu" class="collapsible d-md-none flex-column align-items-center">
+        <div id="minimenu" class="collapsible d-md-none flex-column align-items-stretch">
             <button class="actionLink" onclick="activatePageMini('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</button>
             <button class="actionLink" onclick="activatePageMini('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</button>
             <button class="actionLink" onclick="activatePageMini('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</button>
-
-        </div>
-        <div class="row d-md-none collapsible" id="divider"></div>    
+            <div class="col-12 divider"></div>  
+        </div>  
     </header>
     <main class="container-fluid flex-grow-1 py-3 d-flex flex-column justify-content-center" id="content">
         <div class="row page active-page" id="about-me">
-            <div class="col-12 col-md-5 col-lg-4 px-3 text-center">
+            <div class="col-12 col-md-5 col-lg-4 px-3 d-flex justify-content-center align-items-center">
                 <img src="static/images/meAndRoxie.jpg" id="me-and-roxie">
             </div>
             <div class="col-12 mt-3 m-md-0 col-md-7 col-lg-8 px-3 d-flex flex-column justify-content-between">
                 <h1 class='d-none' id="greeting">Hi, I'm Javi. Welcome to my portfolio.</h1>
-                <div class="text-container">
-                    <p class='d-none' id='p-1'>I'm a web developer, data analyst, amateur cook and that is my dog, Roxie.</p>
-                    <p class='d-none' id='p-2'>I used to work in manufacturing as a design engineer back in Monterrey, Mexico before moving to DC with my partner and pursuing a career as a developer. I've been coding for almost two years now, in both Python and Javascript, going through tutorials, classes, and projects. I enjoy it a lot.</p>
-                    <p class='d-none' id='p-3'>On this page you can find some projects that I've worked on, as well as my contact information. Look around and feel free to reach me with questions, comments or just to say hi.</p>
+                <div class="text-container flex-grow-1">
+                    <p class='d-none' id='p-1'>I'm a web developer, data analyst, and amateur cook. (That's my dog, Roxie.)</p>
+                    <p class='d-none' id='p-2'>I've been coding for two years, in both Python and Javascript. I previously worked as a design engineer in manufacturing in Monterrey, Mexico. Now, I live in Washington DC with my partner.</p>
+                    <p class='d-none' id='p-3'>I enjoy working on web projects, complex data analysis, and expanding my skills through tutorials and classes. This page has some of my projects and contact information if you'd like to connect!</p>
                 </div>
                 <div class="d-flex justify-content-center align-items-end column-gap-3 mt-3">
                     <button class="custom-button px-3 py-2" onclick="activatePage('projects')"><i class="bi bi-terminal me-1"></i>See projects</button>
@@ -134,9 +133,9 @@
         </div>
     </main>
     <footer class="container-fluid mt-auto text-center">
-        <div class="row" id="divider"></div>
         <div class="row">
-            <div class="col-12 col-md mt-2 mb-md-2">
+            <div class="col divider"></div>
+            <div class="col-12 col-md my-2">
                 <p class="m-0">Thanks for stopping by</p>
                 <p class="m-0">Let's keep in touch:</p>
                 <div class="m-2">
