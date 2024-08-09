@@ -25,7 +25,7 @@ body{
     font-family: Manrope,sans-serif;
     color:var(--text);
     background: linear-gradient(44deg, #0129 38%, #0129 100%), url(../images/background-3.jpg);
-    background-size: auto 100lvh;
+    background-size: auto 120lvh;
     background-position: 50%;
     background-attachment: fixed;
     text-shadow: 1px 1px var(--darktextlow);
@@ -34,6 +34,9 @@ body{
 @media (min-aspect-ratio:4/3){
     body{
         background-size: cover;
+    }
+    h1#greeting{
+        color:red
     }
 }
 
