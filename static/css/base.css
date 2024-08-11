@@ -27,18 +27,11 @@ body{
     font-family: Manrope,sans-serif;
     color:var(--text);
     background-color: #023;
-    text-shadow: 1px 1px var(--darktextlow);
-}
-
-.background{
-    position:fixed;
-    /* height:100%; */
-    z-index:-1;
     background: linear-gradient(44deg, #0129 38%, #0129 100%), url(../images/background-3.jpg);
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;
-    width:100%;
+    text-shadow: 1px 1px var(--darktextlow);
 }
 
 
@@ -102,6 +95,10 @@ img#me-and-roxie{
     background-color: var(--textTransparent);
 }
 
+button.actionLink>i{
+    margin-right:.25rem;
+}
+
 
 h1,h2,#name{
     font-family:Raleway,sans-serif;
@@ -109,7 +106,6 @@ h1,h2,#name{
 
 h1,#name{
     color:var(--accent);
-    color:lightseagreen;
 }
 
 
@@ -132,13 +128,13 @@ h1,#name{
 }
 
 header,footer{
-    /* background-color: #181828bb; */
-    backdrop-filter: brightness(60%) blur(3px);
+    background-color: #181828bb;
+    backdrop-filter: blur(3px);
     z-index:3;
 }
 
 footer{
-    /* background-color: #181828; */
+    background-color: #181828;
 }
 
 .collapsible{

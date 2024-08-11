@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="static/css/base.css">
 </head>
 <body class="d-flex flex-column">
-    <div class="background"></div>
     <header class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex p-3 justify-content-between align-items-center">
@@ -20,21 +19,23 @@
                     <button class="custom-button" onclick="expandMiniMenu();" id="minimenu-button"><i class="bi bi-chevron-compact-down"></i></button>
                 </div>
                 <div id="menu" class="d-none d-md-flex column-gap-2">
-                    <button class="actionLink" onclick="activatePage('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</button>
-                    <button class="actionLink" onclick="activatePage('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</button>
-                    <button class="actionLink" onclick="activatePage('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</button>
+                    <button class="actionLink" onclick="activatePage('projects')" id="tab-projects"><i class="bi bi-terminal"></i>Projects</button>
+                    <button class="actionLink" onclick="activatePage('resume')" id="tab-resume"><i class="bi bi-file-earmark-text"></i>Resume</button>
+                    <button class="actionLink" onclick="activatePage('contact')" id="tab-contact"><i class="bi bi-person-vcard"></i>Contact</button>
+                    <button class="actionLink" onclick="activatePage('raq')" id="tab-raq"><i class="bi bi-question-circle"></i>RAQ</button>
                 </div>
             </div>
             <div class="col-12 divider"></div>
         </div>
         <div id="minimenu" class="collapsible d-md-none flex-column align-items-stretch">
-            <button class="actionLink" onclick="activatePageMini('projects')" id="tab-projects"><i class="bi bi-terminal me-1"></i>Projects</button>
-            <button class="actionLink" onclick="activatePageMini('resume')" id="tab-resume"><i class="bi bi-file-earmark-text me-1"></i>Resume</button>
-            <button class="actionLink" onclick="activatePageMini('contact')" id="tab-contact"><i class="bi bi-person-vcard me-1"></i>Contact</button>
+            <button class="actionLink" onclick="activatePageMini('projects')" id="tabmini-projects"><i class="bi bi-terminal"></i>Projects</button>
+            <button class="actionLink" onclick="activatePageMini('resume')" id="tabmini-resume"><i class="bi bi-file-earmark-text"></i>Resume</button>
+            <button class="actionLink" onclick="activatePageMini('contact')" id="tabmini-contact"><i class="bi bi-person-vcard"></i>Contact</button>
+            <button class="actionLink" onclick="activatePageMini('raq')" id="tabmini-raq"><i class="bi bi-question-circle"></i>RAQ</button>
             <div class="col-12 divider"></div>  
         </div>  
     </header>
-    <main class="container-fluid flex-grow-1 py-3 d-flex flex-column justify-content-center" id="content">
+    <main class="container-fluid flex-grow-1 p-3 d-flex flex-column justify-content-center" id="content">
         <div class="row page active-page" id="about-me">
             <div class="col-12 col-md-5 col-lg-4 px-3 d-flex justify-content-center align-items-center">
                 <img src="static/images/meAndRoxie.jpg" id="me-and-roxie">
@@ -52,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="row page p-3" id="projects">
+        <div class="row page" id="projects">
             <div class="col-12">
                 <h1 class="text-center">Projects</h1>
             </div>
@@ -116,20 +117,28 @@
                     <li>Bootstrap</li>
                 </div>
             </a>
-            <!-- <div class="col-md-6 col-xl-3 mb-2">
+            <div class="col-md-6 col-xl-3 mb-2">
                 <h2>NHANES analysis</h2>
                 <img class="project-photo"  src="static/images/nhanes-sqr.jpg">
                 <p>Description</p>
-            </div> -->
+            </div>
         </div>
-        <div class="row page p-3" id="resume">
+        <div class="row page" id="resume">
             <div class="col-12 text-center">
                 <h1>Resume</h1>
             </div>
         </div>
-        <div class="row page p-3" id="contact">
+        <div class="row page" id="contact">
             <div class="col-12 text-center">
                 <h1>Contact me</h1>
+            </div>
+        </div>
+        <div class="row page" id="raq">
+            <div class="col-12 text-center">
+                <h1>Rarely Asked Questions</h1>
+                <p>Background: Aoraki/Mount Cook in New Zealand</p>
+                <p>I want to know more about Roxie: She's 5, she doesn't like toys, she lives with my mom in Monterrey, here are other photos:</p>
+                <span>photo 1, 2,3 </span>
             </div>
         </div>
     </main>
@@ -153,7 +162,7 @@
             </div> -->
         </div>
     </footer>
-    <div style="position: fixed;"></div>
+    <!-- <div style="position: fixed;"></div> -->
 </body>
 <script src='static/js/script.js'></script>
 </html>

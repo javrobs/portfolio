@@ -78,12 +78,3 @@ function dropALetter(text,item,speed){
     }
 }
 
-window.addEventListener('load',adjustBackground);
-window.addEventListener('resize',adjustBackground);
-window.addEventListener('changeOrientation',adjustBackground);
-
-
-function adjustBackground(){
-    console.log('doing it?')
-    document.querySelector('.background').style.height = `${window.innerHeight}px`;
-}
